@@ -32,6 +32,15 @@ gem 'unicorn'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Style
+gem "bootstrap-sass"
+
+# button style
+gem "font-awesome-rails"
+
+# simple form
+gem "simple_form"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
