@@ -42,7 +42,7 @@ gem "font-awesome-rails"
 gem "simple_form"
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  # Call 'byebugs' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
   # BBD
