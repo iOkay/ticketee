@@ -1,6 +1,6 @@
 class TicketsController < ApplicationController
   before_action :set_project
-  before_action :set_ticket, only: [:show, :edit, :update, :destory]
+  before_action :set_ticket, only: [:show, :edit, :update, :destroy]
 
   def new
     @ticket = @project.tickets.build
@@ -35,7 +35,11 @@ class TicketsController < ApplicationController
     end
   end
 
-  def destory
+  def destroy
+    @ticket.destroy
+    flash[:notice] = "Ticket has been deleted."
+
+    redirect_to @project
   end
 
   private
